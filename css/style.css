@@ -228,3 +228,96 @@ footer p { color: #bbb; margin-top: 5px; font-size: 13px; }
     background: #fdecea;
     border-left-color: #c4170c;
 }
+
+.game {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.game-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.crossword {
+    display: grid;
+    grid-template-columns: repeat(5, 56px);
+    grid-template-rows: repeat(5, 56px);
+    gap: 2px;
+    background: #222;
+    border: 2px solid #222;
+}
+
+.cell {
+    position: relative;
+    background: #fff;
+}
+.cell.black {
+    background: #222;
+}
+.cell .num {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #555;
+    pointer-events: none;
+}
+.cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    padding-top: 8px;
+}
+.cell input:focus {
+    background: #fff3b0;
+}
+.cell.correct {
+    background: #d4f4dd;
+}
+.cell.wrong {
+    background: #fdd;
+}
+
+.clues h4 {
+    margin: 0 0 6px;
+}
+.clues ol {
+    margin: 0 0 16px;
+    padding-left: 22px;
+}
+.clues li {
+    margin-bottom: 4px;
+}
+
+.game-actions button {
+    padding: 10px 20px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #c4170c;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+#gameMessage {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .crossword {
+        grid-template-columns: repeat(5, 48px);
+        grid-template-rows: repeat(5, 48px);
+    }
+}

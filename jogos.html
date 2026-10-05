@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Notícias - Jogos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="top-header">
+    <div class="top-links">
+    <a href="index.html">portal.com</a>
+    <a href="index.html" class="red">Notícias</a>
+    <a href="esportes.html" class="green">Esportes</a>
+    <a href="economia.html" class="blue">Economia</a>
+    <a href="politica.html" class="purple">Política</a>
+    <a href="ceara.html" class="yellow">Ceará</a>
+    <a href="tecnologia.html" class="teal">Tecnologia</a>
+    <a href="saude.html" class="orange">Saúde</a>
+    <a href="mundo.html" class="indigo">Mundo</a>
+</div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar" id="sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+        <a href="index.html" class="logo">PORTAL<span>+</span></a>
+        <button id="closeSidebar" aria-label="Fechar menu">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+        <a href="index.html">Início</a>
+        <a href="esportes.html">Esportes</a>
+        <a href="economia.html">Economia</a>
+        <a href="politica.html">Política</a>
+        <a href="ceara.html">Ceará</a>
+        <a href="tecnologia.html">Tecnologia</a>
+        <a href="saude.html">Saúde</a>
+        <a href="mundo.html">Mundo</a>
+    </nav>
+</aside>
+
+<header class="main-header">
+    <div class="header-content">
+        <button class="menu-button" id="menuButton">☰ <span>MENU</span></button>
+        <a href="index.html" class="logo">PORTAL<span>+</span></a>
+        <div class="header-actions">
+            <button id="searchButton">⌕ BUSCAR</button>
+        </div>
+    </div>
+</header>
+
+<nav class="category-nav" id="categoryNav">
+    <a href="index.html" class="active">Início</a>
+    <a href="esportes.html">Esportes</a>
+    <a href="economia.html">Economia</a>
+    <a href="politica.html">Política</a>
+    <a href="ceara.html">Ceará</a>
+    <a href="tecnologia.html">Tecnologia</a>
+    <a href="saude.html">Saúde</a>
+    <a href="mundo.html">Mundo</a>
+
+</nav>
+
+<main class="container">
+    <section class="section-title">
+        <h2>Jogos</h2>
+    </section>
+
+    <section class="game">
+        <h3>Mini palavras cruzadas</h3>
+        <p>Preencha a grade com as respostas das dicas.</p>
+
+        <div class="game-layout">
+            <div class="crossword" id="crossword"></div>
+
+            <div class="clues">
+                <h4>Horizontais</h4>
+                <ol>
+                    <li value="1">Planeta onde vivemos</li>
+                    <li value="4">Grupo seleto, de classe alta</li>
+                    <li value="5">Querido</li>
+                </ol>
+                <h4>Verticais</h4>
+                <ol>
+                    <li value="1">Real, dólar ou euro</li>
+                    <li value="2">Personagem de vestido branco no casamento</li>
+                    <li value="3">Pessoa com excesso de peso</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="game-actions">
+            <button id="checkBtn">Verificar</button>
+            <button id="clearBtn">Limpar</button>
+        </div>
+        <p id="gameMessage"></p>
+    </section>
+</main>
+
+<footer>
+    <div>
+        <strong>PORTAL+</strong>
+        <p>Informação em primeiro lugar.</p>
+    </div>
+    <p>© 2026 Portal Notícias</p>
+</footer>
+
+<script src="js/cruzadas.js"></script>
+<script src="js/script.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
